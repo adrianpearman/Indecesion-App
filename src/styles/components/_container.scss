@@ -1,11 +1,13 @@
-.container{
+@use "../base/settings" as *;
+
+.container {
   max-width: 60rem;
   margin: 0 auto;
   padding: 0 $m-size;
 }
 
-.container__text{
-  text-align: center
+.container__text {
+  text-align: center;
 }
 
 .container__background {

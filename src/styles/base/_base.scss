@@ -1,5 +1,7 @@
+@use "./settings" as *;
+
 html {
-  font-size: 62.5%
+  font-size: 62.5%;
 }
 
 body {
@@ -7,10 +9,10 @@ body {
   font-size: $m-size;
 }
 
-button{
-  cursor: pointer
+button {
+  cursor: pointer;
 }
 
-button:disabled{
-  cursor: default
+button:disabled {
+  cursor: default;
 }

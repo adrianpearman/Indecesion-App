@@ -1,39 +1,40 @@
-.add-option-error{
+@use "../base/settings" as *;
+
+.add-option-error {
   color: $off-white;
   font-style: italic;
   padding: 0 $m-size;
-  margin: $m-size 0 0 0
+  margin: $m-size 0 0 0;
 }
 
-.add-option{
+.add-option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: $m-size;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.add-option__input{
+.add-option__input {
   padding: $m-size;
   color: $off-white;
   background: $dark-blue;
   margin: 0;
   border: none;
-  border-bottom: .3rem solid darken($dark-blue, 10%);
+  border-bottom: 0.3rem solid darken($dark-blue, 10%);
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
-
-@media(min-width: $desktop-breakpoint){
-  .add-option{
+@media (min-width: $desktop-breakpoint) {
+  .add-option {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }

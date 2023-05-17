@@ -1,7 +1,9 @@
+@use "../base/settings" as *;
+
 .big-button {
   background: $purple;
   border: none;
-  border-bottom: .6rem solid darken($purple, 10%);
+  border-bottom: 0.6rem solid darken($purple, 10%);
   color: white;
   font-weight: 600;
   font-size: $l-size;
@@ -10,20 +12,20 @@
   padding: 2.4rem;
 }
 
-.big-button:disabled{
+.big-button:disabled {
   opacity: 0.5;
 }
 
-.button{
+.button {
   background: $purple;
   border: none;
-  border-bottom: .3rem solid darken($purple, 10%);
+  border-bottom: 0.3rem solid darken($purple, 10%);
   color: white;
   padding: $s-size;
   font-weight: 500;
 }
 
-.button--link{
+.button--link {
   background: none;
   border: none;
   color: $off-white;
@@ -31,7 +33,7 @@
 }
 
 @media (max-width: $desktop-breakpoint) {
-  .big-button{
+  .big-button {
     padding: $s-size 0;
     margin-bottom: $m-size;
   }
